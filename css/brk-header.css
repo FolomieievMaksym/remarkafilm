@@ -1,0 +1,207 @@
+@media (max-width: 1670px) {
+  .vertical {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+  .vertical::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 99px;
+    left: 0;
+    background-color: #575757;
+  }
+  .vertical__icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .vertical__icon:hover {
+    transform: scale(1.2);
+  }
+  .vertical__icon span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+  .vertical__icon span:first-child {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .vertical__icon span:last-child {
+    width: 63.333%;
+    top: 100%;
+    transform: translate(0, -50%);
+  }
+  .vertical__logo img {
+    max-width: 100%;
+  }
+  .vertical__social .social__list li {
+    margin: 0px 0px 10px 0px;
+    transition: all 0.3s;
+  }
+  .vertical__social .social__list li:hover {
+    transform: scale(1.5);
+  }
+
+  .header-column {
+    font-family: Micra;
+    font-size: 10px;
+  }
+  .header-column__container {
+    height: 100px;
+    max-width: 1715px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .header-column__container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-column__list {
+    display: flex;
+  }
+  .header-column__list li {
+    margin-right: 40px;
+  }
+  .header-column__list li:last-child {
+    margin-right: 0;
+  }
+  .header-column__list li a {
+    padding: 5px;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .header-column__list li a.active {
+    color: #d7fa00;
+  }
+  .header-column__list li a:hover {
+    color: #ff3333;
+    transform: scale(1.1);
+  }
+  .header-column__search {
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .header-column__search:hover {
+    transform: scale(1.5);
+  }
+
+  .header-body__container {
+    max-width: 1715px;
+    margin: 0px auto;
+    padding: 20px 15px;
+  }
+  .header-body__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+  .header-body__contacts {
+    font-family: Montserrat;
+    font-weight: 600;
+  }
+  .header-body__contacts ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-body__contacts ul li {
+    margin-right: 40px;
+  }
+  .header-body__contacts ul li a {
+    color: #fff;
+  }
+  .header-body__contacts ul li:last-child {
+    margin-right: 0;
+  }
+
+  .bread-crumbs__list {
+    display: flex;
+  }
+  .bread-crumbs__list li a {
+    color: #fff;
+  }
+  .bread-crumbs__list li::after {
+    content: " - ";
+    margin-right: 5px;
+  }
+  .bread-crumbs__list li:last-child a {
+    color: #6a6a69;
+  }
+  .bread-crumbs__list li:last-child::after {
+    content: "";
+    margin-right: 0px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 50px 0px;
+  }
+  .header-content__left {
+    flex: 0 1 50%;
+  }
+  .header-content__left h3 {
+    font-family: Micra;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 79px;
+  }
+  .header-content__left p {
+    max-width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .header-content__right {
+    padding-right: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+  .header-content__title {
+    margin: 0px 0px 30px 0px;
+  }
+  .header-content__date {
+    font-size: 36px;
+    color: #d7fa00;
+    margin: 0px 0px 25px 0px;
+  }
+  .header-content__time {
+    font-size: 12px;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .header-body__bottom {
+    position: relative;
+    cursor: pointer;
+  }
+  .header-body__bottom img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header-body__bottom img:last-child {
+    transform: translate(-50%, 50%);
+  }
+}
